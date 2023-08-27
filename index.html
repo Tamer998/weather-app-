@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <label for="countryInput">Country:</label>
+      <input type="text" id="countryInput" placeholder="Enter country code" />
+      <button id="getWeatherBtn">Get Weather</button>
+    </div>
+    <div>
+      <label for="cityDropdown">City:</label>
+      <select id="cityDropdown"></select>
+    </div>
+    <div id="weatherInfo">
+      <h2 id="cityName"></h2>
+      <p id="weatherCondition"></p>
+      <p id="temperature"></p>
+    </div>
+    <div id="loadingPopup" class="hidden">Loading...</div>
+    <script src="script.js"></script>
+  </body>
+</html>
